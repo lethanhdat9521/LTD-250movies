@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Title</th>
+    <th scope="col">Last</th>
+    <th scope="col">Handle</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let m of movies; let counter = index"  >
+      <th scope="row">{{counter}}</th>
+      <td>{{m.id}}</td>
+      <td>{{m.imDbRating}}</td>
+      <td>{{m.crew}}</td>
+      <td>{{m.fullTitle}}</td>
+      <td>{{m.title}}</td>
+      <td><img src="{{m.image}}" alt="This is image"></td>
+    </tr>
+  </tbody>
+</table>
